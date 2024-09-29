@@ -5,7 +5,8 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     git
 
-RUN pip install PyYAML
+RUN python -m venv .venv
+RUN .venv/bin/pip install pyyaml
 
 COPY feed.py /usr/bin/feed.py
 COPY entrypoint.sh /entrypoint.sh
