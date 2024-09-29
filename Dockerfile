@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
-    python4 \
-    python4-pip \
+    python3 \
+    python3-pip \
     git
 
 RUN pip install PyYAML
