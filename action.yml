@@ -9,7 +9,7 @@ inputs:
     description: "Commiter Email address"
     require: true
     default: ${{ github.actor }}@localhost
-  email: 
+  name: 
     description: "Commiter Name"
     require: true
     default: ${{ github.actor }}
