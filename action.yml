@@ -1,0 +1,16 @@
+name: "Podcast Generator"
+author: "Z"
+description: "Lorem ipsum"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+inputs:
+  email: 
+    description: "Commiter Email address"
+    require: true
+    default: ${{ github.actor }}@localhost
+  email: 
+    description: "Commiter Name"
+    require: true
+    default: ${{ github.actor }}
+  
